@@ -29,7 +29,7 @@
           <div class="search-container">
             <form action="/action_page.php">
               <input
-                class="w-[820px] p-2 rounded-2xl border-[1px] focus:outline-none bg-blue-500 bg-opacity-20"
+                class="w-[820px] p-2 px-6 rounded-2xl border-[1px] focus:outline-none bg-blue-500 bg-opacity-20"
                 type="text"
                 placeholder="Belanja di earnit"
                 name="search"
@@ -49,22 +49,30 @@
             <a href=""><img src="/src/assets/troli.png" alt="" width="30" /></a>
           </div>
           <div class="try p-3">
-            <a href=""><img src="/src/assets/user.png" alt="" width="28" /></a>
+            <a href=""><img src="/src/assets/user.png" alt="" width="26" /></a>
           </div>
         </div>
       </div>
       <!-- opsi -->
       <div class="opsi flex px-14 py-3 border-[1px]">
         <div class="kategori flex pr-4">
-          <a href="" class="pr-1">Semua Kategori</a>
-          <a href="" class="p-2"
+          <a href="#" class="pr-1">Semua Kategori</a>
+          <a
+            href="#"
+            class="p-2 active:rotate-180"
+            id="down"
+            onclick="downToUp()"
             ><img src="/src/assets/down.png" width="10"
           /></a>
         </div>
         <div class="produk flex">
-          <a href="" class="px-3">Elektronik</a>
-          <a href="" class="px-3">Pakaian</a>
-          <a href="" class="px-3">Peralatan rumah tangga</a>
+          <a href="" class="px-3 hover:text-blue-400 duration-500"
+            >Elektronik</a
+          >
+          <a href="" class="px-3 hover:text-blue-400 duration-500">Pakaian</a>
+          <a href="" class="px-3 hover:text-blue-400 duration-500"
+            >Peralatan rumah tangga</a
+          >
           <a href="" class="px-3">|</a>
         </div>
         <div class="jasa flex pr-4">
@@ -83,6 +91,13 @@
       <!-- done -->
     </nav>
 
+    <!-- section -->
+    <section class="block">
+      <div class="slider flex justify-center py-6">
+        <img src="/src/assets/promoo.jpg" width="1000" class="rounded-xl" />
+      </div>
+    </section>
+
     <!-- Footer -->
     <!-- <footer class="bg- text-white p-12">
       <div class="container mx-auto text-center mb-4">
@@ -93,5 +108,11 @@
         <a href="#" class="hover:underline hover:scale-110">Contact us</a>
       </div>
     </footer> -->
+    <!-- <script>
+      function downToUp() {
+        let arrow = document.getElementById("down");
+        arrow.style.rotate = "none";
+      }
+    </script> -->
   </body>
 </html>
